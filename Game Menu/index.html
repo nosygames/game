@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5040134979842354"
+     crossorigin="anonymous"></script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Games Menu</title>
+  <head><meta name="google-adsense-account" content="ca-pub-5040134979842354"></head>
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#7c3aed;
+      --glass: rgba(255,255,255,0.04);
+      --radius:16px;
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background: linear-gradient(180deg,var(--bg) 0%, #071028 100%);
+      color:#e6eef8;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:36px;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:980px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:20px;
+      padding:28px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:20px;
+    }
+    .logo{
+      width:56px;height:56px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),#4f46e5);box-shadow:0 6px 18px rgba(124,58,237,0.18);
+    }
+    h1{font-size:20px;margin:0}
+    p.lead{margin:0;color:var(--muted);font-size:13px}
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:18px;
+    }
+
+    a.card{
+      display:flex;align-items:center;gap:12px;padding:14px;border-radius:12px;background:linear-gradient(180deg,var(--card),var(--glass));text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.02);
+      transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+      outline: none;
+    }
+
+    a.card:focus{box-shadow:0 6px 24px rgba(124,58,237,0.18);transform:translateY(-4px);border-color:rgba(124,58,237,0.45)}
+    a.card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+
+    .icon{
+      width:56px;height:56px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));flex:0 0 56px
+    }
+    .meta{flex:1;min-width:0}
+    .meta h3{font-size:15px;margin:0 0 6px 0}
+    .meta p{margin:0;color:var(--muted);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .go{font-size:12px;padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,0.04);background:transparent}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center}
+    .small{font-size:12px;color:var(--muted)}
+
+    /* responsive tweaks */
+    @media (max-width:520px){
+      .logo{width:48px;height:48px}
+      .icon{width:48px;height:48px}
+      .wrap{padding:18px}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap" role="application" aria-labelledby="menu-title">
+    <header>
+      <div class="logo" aria-hidden="true"> 
+        <!-- simple game controller SVG -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 12c0 0-1.2-3 2-5s6-1 6-1 4.2-1 6 1 2 5 2 5-1 6-6 6-10-6-10-6z" stroke="white" stroke-opacity="0.9" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="9.5" cy="11.5" r="0.9" fill="white" />
+          <circle cx="14.5" cy="11.5" r="0.9" fill="white" />
+        </svg>
+      </div>
+      <div>
+        <h1 id="menu-title">Play — Games menu</h1>
+        <p class="lead">Click a tile to open the game in a new tab. Use Tab to navigate and Enter/Space to activate.</p>
+      </div>
+    </header>
+
+    <nav class="grid" aria-label="Games list">
+      <!-- Replace href values with your real URLs -->
+      <a class="card" href="https://madrush.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Drive Mad — opens in a new tab">
+        <div class="icon" aria-hidden="true">
+          <!-- simple map pin / adventure icon -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2c3.866 0 7 3.134 7 7 0 5-7 12-7 12s-7-7-7-12c0-3.866 3.134-7 7-7z" stroke="white" stroke-opacity="0.95" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="12" cy="9" r="2" fill="white" />
+          </svg>
+        </div>
+        <div class="meta">
+          <h3>Drive Mad</h3>
+          <p>Drive through obstacles and wild tracks.</p>
+        </div>
+        <div>
+          <button class="go" aria-hidden="true">Play</button>
+        </div>
+      </a>
+
+      <a class="card" href="https://escapehighway.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Escape Road — opens in a new tab">
+        <div class="icon" aria-hidden="true">
+          <!-- puzzle piece -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12v7a2 2 0 0 0 2 2h7v-2a2 2 0 0 1 2-2h3v-5h-3a2 2 0 0 1-2-2V5H5a2 2 0 0 0-2 2v5z" stroke="white" stroke-opacity="0.95" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="meta">
+          <h3>Escape Road</h3>
+          <p>Race to escape the endless highway.</p>
+        </div>
+        <div>
+          <button class="go" aria-hidden="true">Play</button>
+        </div>
+      </a>
+
+      <a class="card" href="https://streetdash.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Cross Road — opens in a new tab">
+        <div class="icon" aria-hidden="true">
+          <!-- steering wheel -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9" stroke="white" stroke-opacity="0.95" stroke-width="0.9" />
+            <circle cx="12" cy="12" r="2" fill="white" />
+          </svg>
+        </div>
+        <div class="meta">
+          <h3>Cross Road</h3>
+          <p>Cross the busy road without getting hit.</p>
+        </div>
+        <div>
+          <button class="go" aria-hidden="true">Play</button>
+        </div>
+      </a>
+
+      
+
+    </nav>
+
+    <footer>
+      <div class="small">Made by Nosy</div>
+    </footer>
+  </div>
+
+  <script>
+    // Small enhancement: allow Enter/Space on focused card to follow the link
+    document.addEventListener('keydown', function(e){
+      if(e.code === 'Enter' || e.code === 'Space'){
+        const el = document.activeElement;
+        if(el && el.classList && el.classList.contains('card')){
+          e.preventDefault();
+          // open the link in a new tab (same as clicking)
+          window.open(el.href, '_blank', 'noopener');
+        }
+      }
+    });
+
+    // Optional: easy function to programmatically update links from data
+    // Example usage (uncomment and edit):
+    // const data = [ {selector:0, href:'https://my-game-1.example'}, ... ];
+    // document.querySelectorAll('.grid a.card').forEach((a,i)=>{ a.href = data[i]?.href || a.href });
+  </script>
+</body>
+</html>
