@@ -30,7 +30,7 @@
       justify-content:center;
       padding:36px;
     }
-
+    
     .wrap{
       width:100%;
       max-width:980px;
@@ -41,7 +41,7 @@
       backdrop-filter: blur(6px);
       border: 1px solid rgba(255,255,255,0.03);
     }
-
+    
     header{
       display:flex;
       align-items:center;
@@ -53,23 +53,23 @@
     }
     h1{font-size:20px;margin:0}
     p.lead{margin:0;color:var(--muted);font-size:13px}
-
+    
     .grid{
       display:grid;
       grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
       gap:14px;
       margin-top:18px;
     }
-
+    
     a.card{
-      display:flex;align-items:center;gap:12px;padding:14px;border-radius:12px;background:linear-gradient(180deg,var(--card),var(--glass));text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.02);
+      display:flex;align-items:center;gap:12px;padding:14px;border-radius:12px;background:linear-gradient(180deg,var(--card),var(--glass));text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.03);
       transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
       outline: none;
     }
-
+    
     a.card:focus{box-shadow:0 6px 24px rgba(124,58,237,0.18);transform:translateY(-4px);border-color:rgba(124,58,237,0.45)}
-    a.card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
-
+a.card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    
     .icon{
       width:56px;height:56px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));flex:0 0 56px
     }
@@ -77,17 +77,17 @@
     .meta h3{font-size:15px;margin:0 0 6px 0}
     .meta p{margin:0;color:var(--muted);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .go{font-size:12px;padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,0.04);background:transparent}
-
+    
     footer{margin-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center}
     .small{font-size:12px;color:var(--muted)}
-
+    
     /* responsive tweaks */
     @media (max-width:520px){
       .logo{width:48px;height:48px}
       .icon{width:48px;height:48px}
       .wrap{padding:18px}
     }
-
+    
   </style>
 </head>
 <body>
@@ -108,12 +108,12 @@
     </header>
 
     <nav class="grid" aria-label="Games list">
-      <!-- Replace href values with your real URLs -->
-      <a class="card" href="https://nosygames.github.io/game/Cross%20Road/Cross%20Road%20Game%20using%20JS/index.html" target="_blank" rel="noopener noreferrer" aria-label="Drive Mad — opens in a new tab">
+      <!-- Corrected order: Each game matches its title, description, and href -->
+      <a class="card" href="https://nosygames.github.io/game/Mad%20Rush/index.html" target="_blank" rel="noopener noreferrer" aria-label="Drive Mad — opens in a new tab">
         <div class="icon" aria-hidden="true">
           <!-- simple map pin / adventure icon -->
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2c3.866 0 7 3.134 7 7 0 5-7 12-7 12s-7-7-7-12c0-3.866 3.134-7 7-7z" stroke="white" stroke-opacity="0.95" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 2c3.866 0 7 3.134 7 7 0 5-7 12-7 12s-7-7-7-12c0-3.866 3.134-7 7-7z" stroke="white" stroke-opacity="0.95" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="12" cy="9" r="2" fill="white" />
           </svg>
         </div>
@@ -126,7 +126,7 @@
         </div>
       </a>
 
-      <a class="card" href="https://nosygames.github.io/game/Mad%20Rush/index.html" target="_blank" rel="noopener noreferrer" aria-label="Escape Road — opens in a new tab">
+      <a class="card" href="https://nosygames.github.io/game/Escape%20Road/Escape%20road%20game/index.html" target="_blank" rel="noopener noreferrer" aria-label="Escape Road — opens in a new tab">
         <div class="icon" aria-hidden="true">
           <!-- puzzle piece -->
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -142,7 +142,7 @@
         </div>
       </a>
 
-      <a class="card" href="https://nosygames.github.io/game/Escape%20Road/Escape%20road%20game/index.html" target="_blank" rel="noopener noreferrer" aria-label="Cross Road — opens in a new tab">
+      <a class="card" href="https://nosygames.github.io/game/Cross%20Road/Cross%20Road%20Game%20using%20JS/index.html" target="_blank" rel="noopener noreferrer" aria-label="Cross Road — opens in a new tab">
         <div class="icon" aria-hidden="true">
           <!-- steering wheel -->
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
